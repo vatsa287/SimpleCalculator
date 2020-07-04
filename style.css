@@ -1,0 +1,121 @@
+body {
+    background-color: black;
+}
+
+#header {
+    margin : 5px;
+    border-style: solid;
+    border-width: 2px;
+    padding : 5px;
+    font-family: monospace;
+    color : rgb(26, 240, 26);
+    text-align : center;
+} 
+
+#footer {
+    
+    margin : 5px;
+    border-style: solid;
+    border-width: 2px;
+    padding : 5px;
+    font-family: monospace;
+    color : rgb(26, 240, 26);
+    text-align : center;
+
+} 
+
+#container {
+    width: 1000px;
+    height: 550px;
+    margin: 20px auto auto auto;
+    padding : 5px;
+    
+}
+
+#calculator {
+    width: 500px;
+    height: 520px;
+    margin : auto;
+    border-style: solid;
+    border-width: 2px;
+    padding : 5px;
+    color : rgb(26, 240, 26);
+}
+
+#result {
+    width: 480px;
+    height: 130px;
+    margin : 4px auto auto auto;
+    border-style: solid;
+    border-width: 2px;
+    padding : 5px;
+    color : rgb(26, 240, 26);
+}
+
+#history {
+    text-align: right;
+    font-size: large;
+    font-family: monospace;
+}
+
+#output {
+ 
+    font-size: xx-large;
+    text-align: right;
+    width: 480px;
+    height: 48px;
+    font-family: monospace;
+}
+
+#keyboard {
+    width: 480px;
+    height: 355px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    border-style: solid;
+    border-width: 2px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    color : rgb(26, 240, 26);
+    font-family: monospace;
+}
+
+.operators, .numbers , .empty {
+    width: 120px;
+    height: 70px;
+    float: left;
+    font-family: monospace;
+    border-width: 0.5;
+    font-weight: bold;
+    
+}
+
+.operators {
+    color: red;
+    background-color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.numbers, .empty {
+    color : rgb(26, 240, 26);
+    background-color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.operators, .numbers {
+    cursor: pointer;
+}
+
+.operators:active, .numbers:active {
+    font-size: medium;
+}
+
+.operators:focus, .numbers:focus, .empty:focus {
+    outline: 0;
+}
