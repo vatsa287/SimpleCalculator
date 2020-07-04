@@ -119,3 +119,13 @@ body {
 .operators:focus, .numbers:focus, .empty:focus {
     outline: 0;
 }
+
+.operators:hover {
+    color : rgb(26, 240, 26);
+    font-size: medium;
+}
+
+.numbers:hover {
+    color: red;
+    font-size: medium;
+}
