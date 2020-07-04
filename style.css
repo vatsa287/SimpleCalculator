@@ -129,3 +129,12 @@ body {
     color: red;
     font-size: medium;
 }
+
+.fa-twitter-square, .fa-github-square {
+    color : rgb(26, 240, 26);
+}
+
+.fa-twitter-square:hover , .fa-github-square:hover {
+    font-size: large;
+    opacity: 0.5;
+}
