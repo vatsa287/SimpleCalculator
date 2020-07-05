@@ -2,6 +2,11 @@ body {
     background-color: black;
 }
 
+.parent {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 #header {
     margin : 5px;
     border-style: solid;
@@ -25,15 +30,19 @@ body {
 } 
 
 #container {
-    width: 1000px;
-    height: 550px;
+    /*width: 1000px; */
+    /*! float: center; */
+    width: 100%;
+    height: 100%;
     margin: 20px auto auto auto;
     padding : 5px;
+    margin-bottom: 20px;
+  
     
 }
 
 #calculator {
-    width: 500px;
+    width: 37%;
     height: 520px;
     margin : auto;
     border-style: solid;
@@ -43,33 +52,39 @@ body {
 }
 
 #result {
-    width: 480px;
-    height: 130px;
+    width: 97%;
+    height: 25%;
     margin : 4px auto auto auto;
     border-style: solid;
     border-width: 2px;
     padding : 5px;
+    margin-top: 0.8%;
+    padding-left: 1%;
+    padding-right: 1%;
     color : rgb(26, 240, 26);
 }
 
 #history {
+    margin-top: 4%;
+    height: 40%;
+    width: 100%;
     text-align: right;
     font-size: large;
     font-family: monospace;
 }
 
 #output {
- 
+    
+    height: 60%;
+    width: 100%;
     font-size: xx-large;
     text-align: right;
-    width: 480px;
-    height: 48px;
     font-family: monospace;
 }
 
 #keyboard {
-    width: 480px;
-    height: 355px;
+    width: 98%;
+    height: 68%;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
@@ -77,16 +92,16 @@ body {
     border-style: solid;
     border-width: 2px;
     padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
     padding-bottom: 5px;
     color : rgb(26, 240, 26);
     font-family: monospace;
 }
 
 .operators, .numbers , .empty {
-    width: 120px;
-    height: 70px;
+    width: 25%;
+    height: 20%;
     float: left;
     font-family: monospace;
     border-width: 0.5;
@@ -138,3 +153,35 @@ body {
     font-size: large;
     opacity: 0.5;
 }
+
+
+/* Element | file:///C:/Users/Shrivatsa/Desktop/Calculator/index.html 
+
+#keyboard {
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+  }
+  
+  
+  
+  #container {
+    margin-bottom: 20px;
+  }
+  
+  
+  #container {
+    margin-bottom: 20px;
+  }
+  
+  #result {
+    
+    height: 25%;
+  }
+  
+  
+  #result {
+    margin-top: 0.8%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  */
