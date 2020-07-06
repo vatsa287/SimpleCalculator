@@ -61,17 +61,69 @@ body {
 }
 
 @media (hover: none) and (pointer: coarse) and (orientation: landscape){
-    #calculator {
-        width: 91%;
-        height: 50%;
-        margin-left: 1.4%;
-        margin-right: 0.7%;
-    }
-    #header {
-        height: 10%;
-    }
-}
 
+ #calculator {
+    height: 530px;
+    width: 94%;
+    margin-left: 1.4%;
+  }
+  
+ #header {
+    height: 29.833px;
+  }
+  
+ #header > h1:nth-child(1) {
+    height: 17px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+ #history-value {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+ #result {
+    height: 80px;;
+  }
+  
+ #history {
+    padding-top: 5px;
+  }
+  
+ #keyboard {
+    height: 125px;
+  }
+  
+ #footer {
+    height: 26px;
+  }
+
+ #footer > h2:nth-child(1) {
+    height: 27px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+ #container {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+ #calculator {
+    margin-right: 0px;
+    margin-left: 15px;
+  }
+
+ #calculator {
+      margin-left: 0px;
+      width: auto;
+ }
+
+ #container {
+    width: auto;
+  }
+}
 
 
 #result {
@@ -176,35 +228,3 @@ body {
     font-size: large;
     opacity: 0.5;
 }
-
-
-/* Element | file:///C:/Users/Shrivatsa/Desktop/Calculator/index.html 
-
-#keyboard {
-    padding-right: 0.5%;
-    padding-left: 0.5%;
-  }
-  
-  
-  
-  #container {
-    margin-bottom: 20px;
-  }
-  
-  
-  #container {
-    margin-bottom: 20px;
-  }
-  
-  #result {
-    
-    height: 25%;
-  }
-  
-  
-  #result {
-    margin-top: 0.8%;
-    padding-left: 1%;
-    padding-right: 1%;
-  }
-  */
