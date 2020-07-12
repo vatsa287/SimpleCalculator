@@ -174,7 +174,7 @@ body {
     font-family: monospace;
 }
 
-.operators, .numbers , .empty , .microphone {
+.operators, .numbers , .empty {
     width: 25%;
     height: 20%;
     float: left;
@@ -191,18 +191,18 @@ body {
     font-weight: bold;
 }
 
-.numbers, .empty , .microphone {
+.numbers, .empty {
     color : rgb(26, 240, 26);
     background-color: black;
     font-size: large;
     font-weight: bold;
 }
 
-.operators, .numbers, .microphone{
+.operators, .numbers {
     cursor: pointer;
 }
 
-.operators:active, .numbers:active, .microphone:active {
+.operators:active, .numbers:active {
     font-size: medium;
 }
 
@@ -215,7 +215,7 @@ body {
     font-size: medium;
 }
 
-.numbers:hover, .microphone:hover {
+.numbers:hover {
     color: red;
     font-size: medium;
 }
