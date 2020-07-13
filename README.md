@@ -15,11 +15,6 @@ After the completion of dictation the results are stored in WebSpeech API's onre
 [![Screenshot](https://drive.google.com/uc?export=view&id=1UzirqnHXvgQaJ80USNNbSWtk7bYF5qnZ)]()
 
 
-> GIF Tools
-
-- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
-- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
-
 **Recordit - Imgflip**
 
 [![Recordit Gif](https://drive.google.com/uc?export=view&id=1ejcwwKuaOBgJ4FzeaxuW_Rc4-C8MMouz)]()
