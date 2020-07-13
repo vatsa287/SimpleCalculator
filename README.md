@@ -73,7 +73,7 @@ Reach out to me at one of the following places!
 
 ## License
 
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+![License](https://img.shields.io/badge/%20licence-%20GNU%20V3.0-yellow)
 
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2020 © <a href="http://github.com/vatsa287" target="_blank">@vatsa287</a>.
+- **[GNU license](https://img.shields.io/badge/%20licence-%20GNU%20V3.0-yellow)**
+- Copyright 2020 © <a href="http://github.com/vatsa287/blob/master/LICENCE" target="_blank">General Public Licence v3.0</a>.
