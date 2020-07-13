@@ -2,11 +2,6 @@ body {
     background-color: black;
 }
 
-.parent {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 #header {
     margin : 5px;
     border-style: solid;
@@ -17,30 +12,14 @@ body {
     text-align : center;
 } 
 
-#footer {
-    
-    margin : 5px;
-    border-style: solid;
-    border-width: 2px;
-    padding : 5px;
-    font-family: monospace;
-    color : rgb(26, 240, 26);
-    text-align : center;
-
-} 
-
 #container {
-    /*width: 1000px; */
-    /*! float: center; */
-    width: 100%;
+    width: 95%;
     height: 100%;
-    margin: 20px auto auto auto;
+    margin: 20px auto 20px auto;
     padding : 5px;
     margin-bottom: 20px;
-  
-    
 }
-
+  
 #calculator {
     width: 37%;
     height: 520px;
@@ -53,13 +32,11 @@ body {
 
 @media (hover: none) and (pointer: coarse) and (orientation: portrait) {
     #calculator {
-        width: 91%;
-        margin-left: 1.4%;
-        margin-right: 0.7%;
-        height: 620px;
+      width: auto;
+      margin: 0 auto;
     }
 }
-
+  
 @media (hover: none) and (pointer: coarse) and (orientation: landscape){
 
  #calculator {
@@ -125,7 +102,6 @@ body {
   }
 }
 
-
 #result {
     width: 97%;
     height: 25%;
@@ -174,14 +150,13 @@ body {
     font-family: monospace;
 }
 
-.operators, .numbers , .empty , .microphone {
+.operators, .numbers , .microphone {
     width: 25%;
     height: 20%;
     float: left;
     font-family: monospace;
     border-width: 0.5;
-    font-weight: bold;
-    
+    font-weight: bold;   
 }
 
 .operators {
@@ -191,11 +166,15 @@ body {
     font-weight: bold;
 }
 
-.numbers, .empty , .microphone {
+.numbers, .microphone {
     color : rgb(26, 240, 26);
     background-color: black;
     font-size: large;
     font-weight: bold;
+}
+
+#microphone {
+    width: 50%;
 }
 
 .operators, .numbers, .microphone{
@@ -206,7 +185,7 @@ body {
     font-size: medium;
 }
 
-.operators:focus, .numbers:focus, .empty:focus {
+.operators:focus, .numbers:focus {
     outline: 0;
 }
 
@@ -220,6 +199,16 @@ body {
     font-size: medium;
 }
 
+#footer { 
+    margin : 5px;
+    border-style: solid;
+    border-width: 2px;
+    padding : 5px;
+    font-family: monospace;
+    color : rgb(26, 240, 26);
+    text-align : center;
+} 
+
 .fa-twitter-square, .fa-github-square {
     color : rgb(26, 240, 26);
 }
@@ -228,3 +217,4 @@ body {
     font-size: large;
     opacity: 0.5;
 }
+

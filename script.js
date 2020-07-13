@@ -61,7 +61,7 @@ for(var i =0; i<operator.length; i++){
 			if(output != "" || history != ""){
 				output= output==""?output:reverseNumberFormat(output);
 				history=history+output;
-				if(this.id=="="){
+				if(this.id=="equal"){
 					var result=eval(history);
 					printOutput(result);
 					printHistory("");
@@ -81,6 +81,7 @@ var number = document.getElementsByClassName("numbers");
 for(var i =0; i<number.length; i++){
 	number[i].addEventListener('click',function(){
 		var output=reverseNumberFormat(getOutput());
+
         // If output is a number [Nan - Not a number]
         if(output!=NaN){ 
 			output=output+this.id;
@@ -90,12 +91,18 @@ for(var i =0; i<number.length; i++){
 }
 
 var microphone = document.getElementById('microphone');
+
+// Function definition for onclick of microphone emoji
 microphone.onclick=function(){
 
+	// Constructor intialization for browser-compatible WebSpeech API
 	var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
 	recognition.lang = 'en-US';
 	recognition.start();
-	operations = {
+
+	// JS object [key-value pair] to convert words to respective symbols
+	operations = {	
+					// numerical key-value pairs
 					"one" : "1",
 					"two" : "2",
 					"three" : "3",
@@ -106,25 +113,34 @@ microphone.onclick=function(){
 					"eight" : "8",
 					"nine" : "9",
 					
-					"plus":"+",
-					"minus":"-",
+					// operator key-value pairs
+					"add" : "+",
+					"plus" : "+",
+					"minus" : "-",
 					"into" : "*",
-					"multiply":"*",
-					"multiplied by":"*",
-					"divide":"/",
-					"divided by":"/",
-					"remainder":"%"
+					"multiply" : "*",
+					"multiplied by" : "*",
+					"divide" : "/",
+					"divided by" : "/",
+					"remainder" : "%",
+					"mod" : "%"
 				}
 	
 	recognition.onresult = function(event){
 		var input = event.results[0][0].transcript;
 
+		// Replace all occurences of text with respective keys
 		for(property in operations){
 			input= input.replace(property, operations[property]);
 		}
+
+		// Display the intial speech-to-text in output field 
 		document.getElementById("output-value").innerText = input;
+		
+		// Move the intial speech-to-text to history field to make way for processed output value
 		printHistory(input);
 
+		// Display result with latency of 2000ms		
 		setTimeout(function(){
 			evaluate(input);
 		},2000);
@@ -132,6 +148,8 @@ microphone.onclick=function(){
 	}
 	
 }
+
+// Evaluate the input to get the result, display empty if input is non-parseable
 function evaluate(input){
 	try{
 		var result = eval(input);
