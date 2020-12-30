@@ -1,7 +1,7 @@
 [![Made with JavaScript](https://img.shields.io/badge/Made%20With%20JavaScript-JS-orange?style=for-the-badge&logo=appveyor?logoWidth=100)](https://img.shields.io/badge/Made%20With%20JavaScript-JS-orange?style=for-the-badge&logo=appveyor?logoWidth=100) 
 # Simple Calculator
 
-> Smart calculator capable of performing simple calculations with support of voice recognition.
+> Smart calculator capable of performing simple calculations with support for voice recognition.
 
 > Neon green themed Simple Calculator responsive web-app which is capable of performing simple calculations and auto adjust UI on smartphones/convenctional computers with different UI for landscape and portrait modes.Voice recognition added through WebSpeech API which is compatible with Chrome/Firefox in desktops and Android devices.WebSpeech API's is fired after a click on microphone, which is capable of continous recognition.  
 After the completion of dictation the results are stored in WebSpeech API's onresult accessed via event function, converted to a transcript and parsed through eval() function of Javascript.  
